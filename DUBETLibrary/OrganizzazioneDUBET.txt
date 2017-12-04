@@ -1,0 +1,59 @@
+﻿ORGANIZZAZIONE SOLUZIONE DUBET:
+	Sport -> Incontri -> Squadre -----> ANALISI SU CAMPIONATO ATTUALE E GIOCATORI
+	
+	Scaricare fonte fissa di info su squadre campionati giocatori
+
+	Flusso Dati:
+	Parte di caricamento quote (si possono giocare solo squadre e campitonati che sono sul db)
+		1.	Caricamento quote con IEventLoader<T> where T: ISportEvent 
+				(per ISportEvent intendiamo oggetti come RugbyEvent nella quale iscriviamo tutte le proprietà 
+				che dovrà avere un evento di rugby per essere processato)
+			Esso si occuperà di restituire una lista di oggetti T:ISportEvent con le proprietà riempite
+			tra cui le quote richieste.
+			Ad esso bisognerà passare dei parametri che valuteremo dopo
+
+		2.	Caricamento coefficienti partita in base a specifici parametri
+				tramite oggetti che implementino ICalculator<T, Y> where T:IEvaluationUnit, Y:ISportEvent
+					(con IEvaluationUnit creiamo oggetti che specificano il parametro di misura degli eventi
+					con il coefficiente di misura)
+				per ogni partita, viene restituto un oggetto IEvaluationUnit che verrà preso dall'evento
+				in ogni ICalculator ci sarà un'oggetto che implementa ILoader<T> where T:IEvaluationUnit
+				che riesca a caricare i dati richiesti dall'evaluationUnit (magari una prorpietà statica che indichi
+				l'oggetto che il loader deve riempire)
+
+		3.	Selezione quote migliori
+				Una volta fatti i giri di caricamento coefficienti, passiamo la lista di eventi
+				a un oggetto che implemtni ISelector<T> where T: ISportEvent per calcolare le quote migliori anche in base 
+				ai parametri che gli passeremo (Da valutare).
+				Le valutazioni sui IEvaluationUnit vanno fatte solo se tutti gli eventi posseggono 
+				quel tipo di IEvaluaionUnit.
+
+
+				
+
+	Parte per le scommesse
+		Interfaccia IBookmaker: GESTISCE scommesse (PER ADESSO NO)
+
+	Parte statistica/ rendicontazione / warehouse ?
+		verifica scommesse vinte tramite caricamento risultati
+
+
+		MODELLO: Odd
+				 Event<T> T: ISport  ----> possiede referenze a tutte le informazioni necessarie (come ottenerle??)
+					1.	Teams or Part involved
+						a. Players (?)
+						b. Weather
+						...						
+					2.	Campionato
+
+
+
+OBB: APPLICAZIONE DEVE ESSERE SCALABILE!!!!!!
+	1. es: iniziare con solo over calcio
+
+
+BISOGAN GESTIRE DIFFERENZE NOMENCLATURE ES: Ac Milan e MILAN tra htmlLoader e bookmaker---> tramite DB???
+possibilità di caricare cambiamenti in associazioni nopmenclature
+
+
+			
