@@ -7,7 +7,7 @@ namespace DUBETLibrary.Calculators
 {
     public interface IBetCalculator<T, in TD> where T: Models.SportEvent where TD: EventPatameters
     {
-        Dictionary<T, EvaluationModel> Calculate(IEnumerable<T> events, TD parameters);
+        Dictionary<EvaluationModel, T> Calculate(IEnumerable<T> events, TD parameters);
     }
 
     public class FootballEventCalculator: IBetCalculator<FootballEvent, FootballEventParams>
@@ -16,9 +16,9 @@ namespace DUBETLibrary.Calculators
         {
             
         }
-        public Dictionary<FootballEvent, EvaluationModel> Calculate(IEnumerable<FootballEvent> events, FootballEventParams parameters)
+        public Dictionary<EvaluationModel, FootballEvent> Calculate(IEnumerable<FootballEvent> events, FootballEventParams parameters)
         {
-            var eventDictionary = events.ToDictionary(ev => ev, ev => new EvaluationModel());
+            var eventDictionary = events.ToDictionary(ev => new EvaluationModel(), ev => ev);
             //todo: choose a design pattern to make an evaluation of the matches and the related order
             //this will be the core of the program
             return eventDictionary;

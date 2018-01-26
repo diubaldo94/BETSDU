@@ -1,0 +1,2 @@
+C:\Users\alsi100\Documents\GitHub\BETSDU\DUBETLibraryTest\obj\Debug\DUBETLibraryTest.csprojResolveAssemblyReference.cache
+C:\Users\alsi100\Documents\GitHub\BETSDU\DUBETLibraryTest\obj\Debug\DUBETLibraryTest.csproj.CoreCompileInputs.cache

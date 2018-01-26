@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.6.10.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.6.10\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,8 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculators\IBetCalculator.cs" />
-    <Compile Include="BookMakers\IBookMaker.cs" />
-    <Compile Include="Loader\IEventLoader.cs" />
+    <Compile Include="SerieALoader\IEventLoader.cs" />
     <Compile Include="Models\SportEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SportEvent\Football\StandardFootballEvent.cs" />
@@ -51,7 +53,12 @@
     <Content Include="OrganizzazioneDUBET.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BookMakers\" />
+    <Folder Include="DAL\" />
     <Folder Include="Enum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

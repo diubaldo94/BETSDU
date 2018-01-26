@@ -15,7 +15,6 @@ namespace DUBETLibraryTest
     public class EventCalculatorTest
     {
         private readonly FootballEventCalculator _sut;
-        private readonly IEnumerable<IDataOwner> _dataOwners; 
 
         public EventCalculatorTest()
         {

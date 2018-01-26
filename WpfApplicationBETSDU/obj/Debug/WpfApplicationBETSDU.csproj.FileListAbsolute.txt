@@ -1,1 +1,16 @@
 c:\users\administrator\documents\visual studio 2015\Projects\WpfApplicationBETSDU\WpfApplicationBETSDU\bin\Debug\WpfApplicationBETSDU.exe.config
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\bin\Debug\WpfApplicationBETSDU.exe.config
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\bin\Debug\WpfApplicationBETSDU.exe
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\bin\Debug\WpfApplicationBETSDU.pdb
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU.csprojResolveAssemblyReference.cache
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\MainWindow.g.cs
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\App.g.cs
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU_MarkupCompile.cache
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU_MarkupCompile.lref
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\MainWindow.baml
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU.g.resources
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU.Properties.Resources.resources
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU.csproj.GenerateResource.Cache
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU.csproj.CoreCompileInputs.cache
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU.exe
+C:\Users\alsi100\Documents\GitHub\BETSDU\WpfApplicationBETSDU\obj\Debug\WpfApplicationBETSDU.pdb
